@@ -1,6 +1,9 @@
 <template>
   <footer class="footer">
-    Developed and designed by <a target="_black" href="https://github.com/varit05"> Varit J Patel!</a>
+    Developed and designed by
+    <a class="ml-1" target="_black" href="https://github.com/varit05">
+      Varit J Patel!</a
+    >
   </footer>
 </template>
 
@@ -15,7 +18,6 @@ export default {
   height: 8vh;
   display: flex;
   justify-content: center;
-  background: #74b6dc;
   align-items: center;
 }
 </style>
