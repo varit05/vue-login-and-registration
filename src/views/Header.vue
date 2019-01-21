@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-custom">
+  <nav class="navbar navbar-expand-lg">
     <router-link class="navbar-brand" to="/">Home</router-link>
     <button
       class="navbar-toggler"
@@ -15,12 +15,18 @@
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0" v-if="!authUser">
-        <li class="nav-item"><router-link to="login" class="nav-link"> Login</router-link></li>
-        <li class="nav-item"><router-link to="register" class="nav-link">Register</router-link></li>
+        <li class="nav-item">
+          <router-link to="login" class="nav-link"> Login</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="register" class="nav-link">Register</router-link>
+        </li>
       </ul>
 
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0" v-if="authUser">
-        <li class="nav-item"><a class="nav-link" v-on:click="logout();"> Logout </a></li>
+        <li class="nav-item">
+          <a class="nav-link" v-on:click="logout();"> Logout </a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -47,9 +53,6 @@ export default {
 };
 </script>
 <style>
-.navbar-custom {
-  background-color: #0b486b;
-}
 .navbar-brand {
   color: #9bceb4;
 }
