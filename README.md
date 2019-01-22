@@ -1,4 +1,4 @@
-# test-project
+# vue login and registration
 
 > A Vue.js project
 
